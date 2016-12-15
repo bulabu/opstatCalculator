@@ -5,7 +5,10 @@ class AboutActions {
     this.generateActions(
       'getAboutDataSuccess',
       'getAboutDataFail',
-      'updatePortfolioAboutIncome'
+      'updatePortfolioAboutIncome',
+      'updatePortfolioAboutAge',
+      'updatePortfolioAboutRetirementAge',
+      'updatePortfolioAboutMaritalStatus'
     );
   }
   getAboutData(){

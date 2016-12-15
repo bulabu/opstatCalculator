@@ -4,15 +4,11 @@ import AboutActions from '../actions/AboutActions';
 class AboutStore {
   constructor() {
     this.bindActions(AboutActions);
-    this.portfolioAbout = {"Portfolio":
-              {"Age":22,
-              "RetirementAge":66,
-              "Income":76000
-              }
-          };
-    /*this.bindListeners({
-      handleUpdatePortfolioAbout: AboutActions.UPDATE_PORTFOLIO_ABOUT
-    });*/
+    this.Age = 22;
+    this.RetirementAge=66,
+    this.Income=76000
+    this.MaritalStatus
+    this.State
   }
 
   onGetAboutDataSuccess(data) {
@@ -24,7 +20,19 @@ class AboutStore {
     this.portfolioAbout.Portfolio.Age = 0;
   }
   onUpdatePortfolioAboutIncome(income) {
-    this.portfolioAbout.Portfolio.Income = income.target.value;
+    this.Income = income.target.value;
+  }
+  onUpdatePortfolioAboutAge(age) {
+    this.Age = age.target.value;
+  }
+  onUpdatePortfolioAboutRetirementAge(retirementage) {
+    this.RetirementAge = retirementage.target.value;
+  }
+  onUpdatePortfolioAboutMaritalStatus(maritalStatus) {
+    this.MaritalStatus = maritalStatus.target.value;
+  }
+  onUpdatePortfolioAboutState(state) {
+    this.State = state.target.value;
   }
 }
 

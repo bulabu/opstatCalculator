@@ -15,6 +15,7 @@
     "presets": ["es2015", "react"]
   },
   "dependencies": {
+    "material-ui": "^0.16.5",
     "alt": "^0.17.8",
     "async": "^1.5.0",
     "body-parser": "^1.14.1",
@@ -24,8 +25,8 @@
     "history": "^1.13.0",
     "mongoose": "^4.2.5",
     "morgan": "^1.6.1",
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2",
+    "react": "^15.4.1",
+    "react-dom": "^15.0.0",
     "react-router": "^1.0.0",
     "request": "^2.65.0",
     "serve-favicon": "^2.3.0",
