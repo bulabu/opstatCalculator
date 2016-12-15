@@ -4,14 +4,15 @@ class AboutActions {
   constructor() {
     this.generateActions(
       'getAboutDataSuccess',
-      'getAboutDataFail'
+      'getAboutDataFail',
+      'updatePortfolioAboutIncome'
     );
   }
   getAboutData(){
     return {"Portfolio":
               {"Age":25,
               "RetirementAge":66,
-              "Income":76000
+              "Income":75000
               }
           };
   }

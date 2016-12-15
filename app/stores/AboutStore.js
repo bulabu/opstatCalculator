@@ -10,6 +10,9 @@ class AboutStore {
               "Income":76000
               }
           };
+    /*this.bindListeners({
+      handleUpdatePortfolioAbout: AboutActions.UPDATE_PORTFOLIO_ABOUT
+    });*/
   }
 
   onGetAboutDataSuccess(data) {
@@ -19,6 +22,9 @@ class AboutStore {
   onGetAboutDataFail(jqXhr) {
     // Handle multiple response formats, fallback to HTTP status code number.
     this.portfolioAbout.Portfolio.Age = 0;
+  }
+  onUpdatePortfolioAboutIncome(income) {
+    this.portfolioAbout.Portfolio.Income = income.target.value;
   }
 }
 

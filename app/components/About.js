@@ -18,14 +18,11 @@ class About extends React.Component {
   onChange(state) {
     this.setState(state);
   }
-  handleIncomeChange(event) {
-    this.setState({portfolioAbout.Portfolio.age: event.target.value});
-  }
   render() {
     return (
       <div className='alert alert-info'>
-      {this.state.portfolioAbout.Portfolio.Age}
-      <input type="text" value={this.state.portfolioAbout.Portfolio.Income} onChange={this.handleIncomeChange} />
+      {this.state.portfolioAbout.Portfolio.Income}
+      <input type="text" value={this.state.portfolioAbout.Portfolio.Income} onChange={AboutActions.updatePortfolioAboutIncome} />
       </div>
     );
   }
